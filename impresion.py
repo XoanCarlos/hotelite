@@ -96,7 +96,6 @@ def factura(datosfactura):
         texttotal = ('TOTAL:   ' + variables.linfacfinal[2].get_text())
         bill.drawRightString(495, 60, str(texttotal))
         bill.line(50, 635, 540, 635)
-        bill.line(50, 637, 540, 637)
         bill.showPage()
         bill.save()
         dir = os.getcwd()
